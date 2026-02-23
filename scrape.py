@@ -159,30 +159,29 @@ def convert_to_tcg_arena(raw_cards):
         # Stage cards are displayed horizontally in One Piece TCG
         is_horizontal = (card_type == "Stage")
 
+        # Normalize cost to int for face.front.cost
+        try:
+            cost_int = int(card_cost) if card_cost is not None else 0
+        except (ValueError, TypeError):
+            cost_int = 0
+
         # Use actual card number as key and id (e.g. "OP01-001")
         card_list[card_set_id] = {
             "id": card_set_id,
-            "isToken": False,
-            "face": {
-                "front": {
-                    "name": "",
-                    "type": False,
-                    "cost": 0,
-                    "image": image_url,
-                    "isHorizontal": is_horizontal
-                },
-                "back": {
-                    "name": "",
-                    "type": "",
-                    "cost": 0,
-                    "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg",
-                    "isHorizontal": False
-                }
-            },
             "name": card_name,
             "type": card_type,
-            "cost": cost_val,
+            "face": {
+                "front": {
+                    "name": card_name,
+                    "type": card_type,
+                    "cost": cost_int,
+                    "isHorizontal": is_horizontal,
+                    "image": image_url,
+                }
+            },
             "Color": card_color,
+            "cost": cost_int,
+            "isHorizontal": is_horizontal,
             "Cost": cost_val,
             "Power": power_val,
             "Counter": counter_val,
