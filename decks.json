@@ -1,0 +1,94 @@
+[
+  {
+    "game": "One Piece TCG",
+    "lastModifiedAt": "2026-02-23T11:28:54.000Z",
+    "deckList": {
+      "categoriesOrder": [
+        "Leader",
+        "DON",
+        "Character",
+        "Event"
+      ],
+      "Leader": [
+        {
+          "count": 1,
+          "id": "OP11-001"
+        }
+      ],
+      "DON": [
+        {
+          "count": 10,
+          "id": "DON-001"
+        }
+      ],
+      "Character": [
+        {
+          "count": 4,
+          "id": "OP11-004"
+        },
+        {
+          "count": 3,
+          "id": "OP11-096"
+        },
+        {
+          "count": 4,
+          "id": "OP13-007"
+        },
+        {
+          "count": 4,
+          "id": "OP11-082"
+        },
+        {
+          "count": 4,
+          "id": "EB04-047"
+        },
+        {
+          "count": 4,
+          "id": "EB03-008"
+        },
+        {
+          "count": 4,
+          "id": "OP11-008"
+        },
+        {
+          "count": 4,
+          "id": "PRB02-001"
+        },
+        {
+          "count": 4,
+          "id": "EB04-044"
+        },
+        {
+          "count": 4,
+          "id": "OP11-092"
+        },
+        {
+          "count": 2,
+          "id": "EB04-003"
+        }
+      ],
+      "Event": [
+        {
+          "count": 3,
+          "id": "OP01-029"
+        },
+        {
+          "count": 4,
+          "id": "OP11-099"
+        },
+        {
+          "count": 2,
+          "id": "OP11-018"
+        }
+      ],
+      "Sideboard": []
+    },
+    "createdAt": "2026-02-23T11:28:54.000Z",
+    "id": "9e12c0a4-b70f-4536-a53b-76367bf36dcb",
+    "title": "OP11 Koby - Navy Starter",
+    "cardCount": 61,
+    "format": [
+      "Standard"
+    ]
+  }
+]

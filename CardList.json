@@ -58862,5 +58862,83 @@
     "Text": "+1000 Power when attached to a Leader or Character.",
     "Rarity": "",
     "Set": "DON"
+  },
+  "EB04-003": {
+    "id": "EB04-003",
+    "name": "EB04-003",
+    "type": "Character",
+    "face": {
+      "front": {
+        "name": "EB04-003",
+        "type": "Character",
+        "cost": 0,
+        "isHorizontal": false,
+        "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
+      }
+    },
+    "Color": "Red",
+    "cost": 0,
+    "isHorizontal": false,
+    "Cost": "0",
+    "Power": "0",
+    "Counter": "0",
+    "Life": "0",
+    "Attribute": "",
+    "Subtypes": "",
+    "Text": "Placeholder - card data not yet available",
+    "Rarity": "",
+    "Set": "EB04"
+  },
+  "EB04-044": {
+    "id": "EB04-044",
+    "name": "EB04-044",
+    "type": "Character",
+    "face": {
+      "front": {
+        "name": "EB04-044",
+        "type": "Character",
+        "cost": 0,
+        "isHorizontal": false,
+        "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
+      }
+    },
+    "Color": "",
+    "cost": 0,
+    "isHorizontal": false,
+    "Cost": "0",
+    "Power": "0",
+    "Counter": "0",
+    "Life": "0",
+    "Attribute": "",
+    "Subtypes": "",
+    "Text": "Placeholder - card data not yet available",
+    "Rarity": "",
+    "Set": "EB04"
+  },
+  "EB04-047": {
+    "id": "EB04-047",
+    "name": "EB04-047",
+    "type": "Character",
+    "face": {
+      "front": {
+        "name": "EB04-047",
+        "type": "Character",
+        "cost": 0,
+        "isHorizontal": false,
+        "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
+      }
+    },
+    "Color": "",
+    "cost": 0,
+    "isHorizontal": false,
+    "Cost": "0",
+    "Power": "0",
+    "Counter": "0",
+    "Life": "0",
+    "Attribute": "",
+    "Subtypes": "",
+    "Text": "Placeholder - card data not yet available",
+    "Rarity": "",
+    "Set": "EB04"
   }
 }
