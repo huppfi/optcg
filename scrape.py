@@ -172,7 +172,7 @@ def convert_to_tcg_arena(raw_cards):
                     "name": "",
                     "type": "",
                     "cost": 0,
-                    "image": "",
+                    "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg",
                     "isHorizontal": False
                 }
             },
