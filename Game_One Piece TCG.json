@@ -189,7 +189,8 @@
   "defaultRessources": {
     "backgrounds": [
       "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
-    ]
+    ],
+    "decksUrl": "https://raw.githubusercontent.com/huppfi/optcg/master/decks.json"
   },
   "customHelp": "One Piece TCG on TCG Arena.\n\nSetup: Place your Leader card in the Leader area. Set aside Life cards face-down (equal to your Leader's Life value) from the top of your deck. Place 10 DON!! cards in the DON!! Deck.\n\nEach turn: Draw 1 card, move 2 DON!! from DON!! Deck to Active DON!! area. Rest (tap) DON!! to pay costs. Attach active DON!! to your Leader or Characters to boost their power by +1000 each.\n\nAttack with your Leader or Characters by resting them. Your opponent can use Counter cards from hand during battle.\n\nWhen your Leader takes damage, move the top card of your Life to your hand. If it has a Trigger effect, you may activate it. When you have no Life cards left and your Leader takes damage, you lose.\n\nRules: https://www.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
   "cards": {
