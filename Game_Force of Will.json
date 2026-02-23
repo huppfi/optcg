@@ -1,0 +1,373 @@
+{
+  "name": "Force of Will",
+  "menuBackgroundImage": "https://niebvelungen.github.io/TCG-Arena-FoW/Images/menu_background.png",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "Colors",
+      "cost",
+      "set"
+    ],
+    "formats": [
+      {
+        "title": "Wanderer",
+        "gameplay": "Wanderer",
+        "compatibility": "Wanderer",
+        "customCategories": [
+          "Extra deck"
+        ]
+      },
+      {
+        "title": "Paradox",
+        "gameplay": "Wanderer",
+        "compatibility": "Wanderer",
+        "customCategories": [
+          "Extra deck"
+        ]
+      },
+      {
+        "title": "ABC",
+        "gameplay": "Wanderer",
+        "compatibility": "Wanderer",
+        "customCategories": [
+          "Extra deck"
+        ]
+      },
+      {
+        "title": "ABC:D",
+        "gameplay": "Wanderer",
+        "compatibility": "Wanderer",
+        "customCategories": [
+          "Extra deck"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "Wanderer": {
+      "mulligan": {
+        "info": "Draw 5 cards then put any of those cards on bottom. Once satisfied, shuffle and draw back up to 5 (click those cards).",
+        "startingHandSize": 5,
+        "putSelectionAtBottom": true
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": false,
+        "drawPerTurn": "0"
+      },
+      "countersStartingValues": [
+        40,
+        0
+      ],
+      "sections": {
+        "customSections": [
+          "Field",
+          "Magic_Stones",
+          "Mana",
+          "Other",
+          "Ruler",
+          "Extension_Rule",
+          "Standby",
+          "Extra_Deck",
+          "Sub_Ruler",
+          "Expel"
+        ],
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Ruler",
+                  "style": {
+                    "width": "15vh"
+                  }
+                },
+                {
+                  "section": "Sub_Ruler",
+                  "style": {
+                    "width": "15vh"
+                  }
+                },
+                {
+                  "section": "Extension_Rule",
+                  "style": {
+                    "width": "15vh"
+                  }
+                },
+                {
+                  "section": "Field"
+                },
+                {
+                  "section": "Extra_Deck",
+                  "style": {
+                    "width": "10vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Magic_Stones",
+                  "style": {
+                    "width": "10vh"
+                  }
+                },
+                {
+                  "section": "Mana"
+                },
+                {
+                  "section": "Other"
+                },
+                {
+                  "section": "Expel",
+                  "style": {
+                    "width": "10vh"
+                  }
+                },
+                {
+                  "section": "Standby",
+                  "style": {
+                    "width": "10vh"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Extra deck->Extra_Deck",
+          "Ruler",
+          "Sub_Ruler",
+          "Magic_Stones",
+          "Extension_Rule"
+        ],
+        "autoPlayFromHand": {
+          "Resonator": "Stack",
+          "Regalia": "Stack",
+          "Addition": "Stack",
+          "Chant": "Stack",
+          "Rune": "Stack",
+          "Master_Rune": "Stack",
+          "Magic_Stones": "Mana",
+          "Warden": "Stack",
+          "Card": "Other"
+        },
+        "autoPlayFromStack": {
+          "Resonator": "Field",
+          "Regalia": "Other",
+          "Addition": "Other",
+          "Chant": "Discard",
+          "Rune": "Discard",
+          "Master_Rune": "Discard",
+          "Magic_Stones": "Mana",
+          "Warden": "Ruler",
+          "J-Ruler": "Field",
+          "Sub-Ruler": "Sub_Ruler",
+          "Card": "Other"
+        },
+        "sectionsDict": {
+          "Field": {
+            "title": "Field",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Mana": {
+            "title": "Mana",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Other": {
+            "title": "Other",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "END",
+            "isHorizontalAllowed": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Ruler": {
+            "title": "Ruler",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Ruler",
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Sub_Ruler": {
+            "title": "Sub_Ruler",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Sub Ruler",
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Extension_Rule": {
+            "title": "Extension_Rule",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "Extension Rule",
+            "noQuickActions": true,
+            "enterTapped": true,
+            "enterSpun": false,
+            "isGroupForbidden": true,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Magic_Stones": {
+            "title": "Magic_Stones",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Magic Stone Deck",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Expel": {
+            "title": "Expel",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Expel",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Extra_Deck": {
+            "title": "Extra_Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Extra deck",
+            "noQuickActions": true,
+            "enterTapped": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false,
+            "enterSpun": false
+          },
+          "Standby": {
+            "title": "Standby",
+            "isHidden": "opponent-only",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Standby",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Stack",
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Chase",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      },
+      "defaultNotes": "",
+      "tokens": [],
+      "hideFacedDownCards": false
+    }
+  },
+  "defaultRessources": {
+    "backgrounds": [
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/ki_lua.jpeg",
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/edl.jpeg",
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/Long_tony.jpeg",
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/fow_fest_2023.png",
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/force_of_will_archive.png",
+      "https://niebvelungen.github.io/TCG-Arena-FoW/Images/Masterpiece_03_playmat.png"
+    ],
+    "decksUrl": "https://niebvelungen.github.io/TCG-Arena-FoW/decks.json"
+  },
+  "customHelp": "The app will let you play Force of Will semi manual, cards will move to their supposed area regardless of text. \nVisit https://www.forceofwind.online for decklists and for the Force of Will database. \nCurrent FoW Comprehensive Rules: https://www.fowtcg.com/pdf/c.pdf.\nDiscords: Rulerschool - https://discord.com/invite/QqVGKnRbR4 Force of Will Global - https://discord.gg/NZQqqQm \rYoutube: \rhttps://www.youtube.com/@RulerSchoolTCG \rhttps://www.youtube.com/@ForceOfWillArchive \rhttps://www.youtube.com/@ForceOfWill",
+  "cards": {
+    "dataUrl": "https://niebvelungen.github.io/TCG-Arena-FoW/cards_fow.json",
+    "cardBack": "https://fowsim.s3.amazonaws.com/static/img/pack/card_back.fd17635728de.png"
+  }
+}

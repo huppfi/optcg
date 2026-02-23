@@ -1,0 +1,255 @@
+{
+  "name": "One Piece TCG",
+  "menuBackgroundImage": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "Color",
+      "cost",
+      "Set"
+    ],
+    "formats": [
+      {
+        "title": "Standard",
+        "gameplay": "Standard",
+        "compatibility": "Standard",
+        "customCategories": [
+          "Leader"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "Standard": {
+      "mulligan": {
+        "info": "Draw 5 cards. You may mulligan once: shuffle your entire hand back and draw 5 new cards.",
+        "startingHandSize": 5,
+        "putSelectionAtBottom": true
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "sharedTurn": false,
+        "drawPerTurn": "1"
+      },
+      "countersStartingValues": [
+        0,
+        0
+      ],
+      "sections": {
+        "customSections": [
+          "Leader_Area",
+          "Field",
+          "Stage_Area",
+          "DON_Deck",
+          "DON_Area",
+          "Life",
+          "Cost_Area"
+        ],
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Leader_Area",
+                  "style": {
+                    "width": "18vh"
+                  }
+                },
+                {
+                  "section": "Field"
+                },
+                {
+                  "section": "Life",
+                  "style": {
+                    "width": "10vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "DON_Deck",
+                  "style": {
+                    "width": "10vh"
+                  }
+                },
+                {
+                  "section": "DON_Area"
+                },
+                {
+                  "section": "Stage_Area"
+                },
+                {
+                  "section": "Cost_Area"
+                }
+              ]
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "Leader->Leader_Area"
+        ],
+        "autoPlayFromHand": {
+          "Character": "Field",
+          "Event": "Discard",
+          "Stage": "Stage_Area",
+          "Leader": "Leader_Area"
+        },
+        "autoPlayFromStack": {},
+        "sectionsDict": {
+          "Leader_Area": {
+            "title": "Leader_Area",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "displayedTitle": "Leader",
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": true,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Field": {
+            "title": "Field",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "Characters",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stage_Area": {
+            "title": "Stage_Area",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "isHorizontalAllowed": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "Stage",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "DON_Deck": {
+            "title": "DON_Deck",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "DON!! Deck",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "DON_Area": {
+            "title": "DON_Area",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "Active DON!!",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Life": {
+            "title": "Life",
+            "isHidden": "opponent-only",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Life",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Cost_Area": {
+            "title": "Cost_Area",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "END",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "Rested DON!!",
+            "noQuickActions": false,
+            "enterTapped": true,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      },
+      "defaultNotes": "",
+      "tokens": [
+        {
+          "id": "DON",
+          "name": "DON!!",
+          "isToken": true,
+          "face": {
+            "front": {
+              "name": "DON!!",
+              "type": false,
+              "cost": 0,
+              "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Special%20DON.png",
+              "isHorizontal": false
+            },
+            "back": {
+              "name": "",
+              "type": "",
+              "cost": 0,
+              "image": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg",
+              "isHorizontal": false
+            }
+          }
+        }
+      ],
+      "hideFacedDownCards": false
+    }
+  },
+  "defaultRessources": {
+    "backgrounds": [
+      "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
+    ]
+  },
+  "customHelp": "One Piece TCG on TCG Arena.\n\nSetup: Place your Leader card in the Leader area. Set aside Life cards face-down (equal to your Leader's Life value) from the top of your deck. Place 10 DON!! cards in the DON!! Deck.\n\nEach turn: Draw 1 card, move 2 DON!! from DON!! Deck to Active DON!! area. Rest (tap) DON!! to pay costs. Attach active DON!! to your Leader or Characters to boost their power by +1000 each.\n\nAttack with your Leader or Characters by resting them. Your opponent can use Counter cards from hand during battle.\n\nWhen your Leader takes damage, move the top card of your Life to your hand. If it has a Trigger effect, you may activate it. When you have no Life cards left and your Leader takes damage, you lose.\n\nRules: https://www.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/huppfi/optcg/master/CardList.json",
+    "cardBack": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg"
+  }
+}
