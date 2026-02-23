@@ -28,6 +28,15 @@
         "drawNewHand": true,
         "putSelectionAtBottom": false
       },
+      "beforeGameStart": {
+        "initialBoardSetup": [
+          {
+            "drawFromTop": "deck",
+            "count": 5,
+            "destination": "Life"
+          }
+        ]
+      },
       "newTurn": {
         "drawOnStart": false,
         "sharedTurn": false,
@@ -59,24 +68,9 @@
                   }
                 },
                 {
-                  "section": "Field"
-                }
-              ]
-            },
-            {
-              "direction": "row",
-              "content": [
-                {
-                  "section": "Leader_Area",
+                  "section": "Field",
                   "style": {
-                    "width": "15vh",
-                    "marginLeft": "auto"
-                  }
-                },
-                {
-                  "section": "Stage_Area",
-                  "style": {
-                    "width": "15vh"
+                    "maxWidth": "55vh"
                   }
                 }
               ]
@@ -87,11 +81,24 @@
                 {
                   "section": "DON_Deck",
                   "style": {
-                    "width": "10vh"
+                    "width": "8vh"
                   }
                 },
                 {
                   "section": "Cost_Area"
+                },
+                {
+                  "section": "Leader_Area",
+                  "style": {
+                    "width": "12vh",
+                    "marginLeft": "auto"
+                  }
+                },
+                {
+                  "section": "Stage_Area",
+                  "style": {
+                    "width": "12vh"
+                  }
                 }
               ]
             }
@@ -192,7 +199,7 @@
     ],
     "decksUrl": "https://raw.githubusercontent.com/huppfi/optcg/master/decks.json"
   },
-  "customHelp": "One Piece TCG on TCG Arena.\n\nSetup: Place your Leader card in the Leader area. Set aside Life cards face-down (equal to your Leader's Life value) from the top of your deck. Place 10 DON!! cards in the DON!! Deck.\n\nEach turn: Draw 1 card, move 2 DON!! from DON!! Deck to Active DON!! area. Rest (tap) DON!! to pay costs. Attach active DON!! to your Leader or Characters to boost their power by +1000 each.\n\nAttack with your Leader or Characters by resting them. Your opponent can use Counter cards from hand during battle.\n\nWhen your Leader takes damage, move the top card of your Life to your hand. If it has a Trigger effect, you may activate it. When you have no Life cards left and your Leader takes damage, you lose.\n\nRules: https://www.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
+  "customHelp": "One Piece TCG on TCG Arena.\n\nSetup: Your Leader starts in the Leader area. After mulligan, 5 Life cards are drawn from the top of your deck automatically. If your Leader has a different Life value (e.g. 4), adjust manually. 10 DON!! cards start in the DON!! Deck.\n\nEach turn: Draw 1 card, move 2 DON!! from DON!! Deck to Cost Area. Rest (tap) DON!! to pay costs. Attach active DON!! to your Leader or Characters to boost their power by +1000 each.\n\nAttack with your Leader or Characters by resting them. Your opponent can use Counter cards from hand during battle.\n\nWhen your Leader takes damage, move the top card of your Life to your hand. If it has a Trigger effect, you may activate it. When you have no Life cards left and your Leader takes damage, you lose.\n\nRules: https://www.onepiece-cardgame.com/pdf/rule_comprehensive.pdf",
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/huppfi/optcg/master/CardList.json",
     "cardBack": "https://raw.githubusercontent.com/huppfi/optcg/master/Card_back.jpg",
