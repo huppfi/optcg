@@ -132,6 +132,9 @@ def convert_to_tcg_arena(raw_cards):
         set_name = raw.get("set_name", "")
         image_url = raw.get("card_image", "")
 
+        # Derive short set code from card_set_id (e.g. "OP01-077" -> "OP01")
+        set_code = card_set_id.rsplit("-", 1)[0] if "-" in card_set_id else card_set_id
+
         # Normalize values to strings
         try:
             cost_val = str(int(card_cost)) if card_cost is not None else "0"
@@ -188,7 +191,7 @@ def convert_to_tcg_arena(raw_cards):
             "Subtypes": sub_types,
             "Text": card_text,
             "Rarity": rarity,
-            "Set": set_name,
+            "Set": set_code,
         }
 
     return card_list
