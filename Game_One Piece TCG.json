@@ -43,8 +43,7 @@
           "DON_Deck",
           "DON_Area",
           "Life",
-          "Cost_Area",
-          "Stack"
+          "Cost_Area"
         ],
         "layout": {
           "direction": "column",
@@ -55,16 +54,28 @@
                 {
                   "section": "Leader_Area",
                   "style": {
-                    "width": "18vh"
+                    "width": "15vh"
+                  }
+                },
+                {
+                  "section": "DON_Deck",
+                  "style": {
+                    "width": "10vh"
+                  }
+                },
+                {
+                  "section": "Life",
+                  "style": {
+                    "width": "10vh"
                   }
                 },
                 {
                   "section": "Field"
                 },
                 {
-                  "section": "Life",
+                  "section": "Stage_Area",
                   "style": {
-                    "width": "10vh"
+                    "width": "15vh"
                   }
                 }
               ]
@@ -73,16 +84,7 @@
               "direction": "row",
               "content": [
                 {
-                  "section": "DON_Deck",
-                  "style": {
-                    "width": "10vh"
-                  }
-                },
-                {
                   "section": "DON_Area"
-                },
-                {
-                  "section": "Stage_Area"
                 },
                 {
                   "section": "Cost_Area"
