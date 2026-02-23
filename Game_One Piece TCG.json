@@ -43,7 +43,8 @@
           "DON_Deck",
           "DON_Area",
           "Life",
-          "Cost_Area"
+          "Cost_Area",
+          "Stack"
         ],
         "layout": {
           "direction": "column",
@@ -94,12 +95,17 @@
           "Leader->Leader_Area"
         ],
         "autoPlayFromHand": {
+          "Character": "Stack",
+          "Event": "Stack",
+          "Stage": "Stack",
+          "Leader": "Leader_Area"
+        },
+        "autoPlayFromStack": {
           "Character": "Field",
           "Event": "Discard",
           "Stage": "Stage_Area",
           "Leader": "Leader_Area"
         },
-        "autoPlayFromStack": {},
         "sectionsDict": {
           "Leader_Area": {
             "title": "Leader_Area",
@@ -210,6 +216,23 @@
             "enterTapped": true,
             "enterSpun": false,
             "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "title": "Stack",
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Stack",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
           }
